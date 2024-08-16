@@ -1,0 +1,64 @@
+Automation Road Map for Project OLA
+// Tools and Technologies
+    Automation Framework: 
+        Cypress
+    Languages: 
+        JavaScript, TypeScript
+    Reporting: 
+        Allure Reporting (exportable to XLSX format)
+//Project Structure
+    We follow the Page Object Model (POM) structure for better code reusability and maintenance. Below is the detailed folder structure and its purpose:
+    Fixtures
+     Description: 
+        Stores all the data used in the project in JSON format.
+     Usage:
+         Helps in managing test data separately from test scripts.
+    Locators
+     Description:
+         Contains XPATH/CSS selectors of the application.
+    Usage: 
+        Centralizes element locators for easy maintenance and updates.
+    Pages
+     Description: 
+        Represents the pages of the application we want to automate.
+    Usage: 
+        Contains page-specific methods and interactions.
+    Test Cases
+     Description:
+         Contains test scripts that call the pages and write test scenarios using describe and it blocks.
+     Usage: 
+        Executes automated test scripts and validates application functionality.
+    Screenshots/Videos
+     Description:
+         Stores screenshots and videos of test execution.
+     Usage: 
+        Automatically captures screenshots on test failure and records videos for headless browser test runs.
+    Utils
+     Description:
+         Contains custom functions used repeatedly in the project.
+     Usage: 
+        Promotes code reusability by storing utility functions.
+//Environment Configurations
+    Description:
+         Manages environment-specific configurations (e.g., production, staging, QA).
+    Usage: 
+        Executes tests in different environments using custom commands.
+    Configurations (Config)
+     Description:
+         Stores custom configurations like base URL, default screen size, Allure report configuration, default page timeout, etc.
+     Usage: 
+        Centralizes project settings for consistency across test executions.
+    Package.json
+     Description: 
+        Contains environment-specific scripts, allure report generation scripts, cross-browser testing scripts, and JSON/CSV file conversion scripts.
+     Usage: 
+        Manages project dependencies and scripts for various operations.
+//Version Control
+    Platform: 
+        GitHub
+            Usage: 
+                Maintains the project repository, manages version control, and facilitates team collaboration.
+                
+//Implementation Details
+    Purpose: 
+        Cypress is used for end-to-end testing of web applications, including API testing.
