@@ -1,0 +1,24 @@
+{
+    "Personal":{
+        "CreateNewAccount":"//button[normalize-space()='Create New Account']",
+        "Personal":"//span[normalize-space()='Personal']",
+        "PersonalAccountType":"//select[@class='form-select']",
+        "JointAccountType":"//div[@class='col-lg-12']//div//select[@class='form-select']",
+        "Next":"//button[normalize-space()='Next']"
+
+    },
+    "Entity":{
+        "CreateNewAccount":"//button[normalize-space()='Create New Account']",
+        "Entity":"//span[normalize-space()='Entity']",
+        "EntityAccountType":"//select[@class='form-select']",
+        "Next":"//button[normalize-space()='Next']"
+
+    },
+    "Retirement":{
+        "CreateNewAccount":"//button[normalize-space()='Create New Account']",
+        "Retirement":"//span[normalize-space()='Retirement']",
+        "RetirementAccountType":"//select[@class='form-select']",
+        "Next":"//button[normalize-space()='Next']"
+
+    }
+}

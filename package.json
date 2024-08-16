@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@faker-js/faker": "^8.4.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.3"
+  },
+  "scripts": {
+    "test": "npm run clean && npm run cypress:run && npm run report:allure",
+    "cypress:run": "npx cypress run",
+    "clean": "rimraf cypress/e2e/videos/Admin/* && rimraf cypress/screenshots/* && rimraf allure-results/*",
+    "cypress": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:edge": "npx cypress run --browser=edge --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:electron": "npx cypress run --browser=electron --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:firefox": "npx cypress run --browser=firefox --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "test:all-browsers": "npm run browser:chrome & npm run browser:edge & npm run browser:electron & npm run browser:firefox",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "clean:screenshots": "node -e \"require('fs').rmdirSync('cypress/e2e/screenshots', { recursive: true, force: true })\""
+  }
+}

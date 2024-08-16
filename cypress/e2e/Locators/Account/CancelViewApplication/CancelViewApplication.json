@@ -1,0 +1,9 @@
+{
+    "CancelViewApplication":{
+        "SelectOption":"//div[@id='row-0']//button[@id='dropdown-basic']",
+        "ViewApplication":"//a[normalize-space()='View Application']",
+        "CancelApplication":"//a[normalize-space()='Cancel Application']",
+        "CancelApplicationYes":"//button[normalize-space()='Yes']",
+        "CloseApplicationClose":"//button[normalize-space()='Close']"
+    }
+}

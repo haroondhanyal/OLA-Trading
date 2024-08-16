@@ -1,0 +1,6 @@
+{
+    "DocumentUpload":{
+        "UploadDrivingLicenses":"//input[@name='filePrimaryDL']",
+        "UploadAuthorizationDocument":"//input[@name='fileDividentAuth']"
+    }
+}

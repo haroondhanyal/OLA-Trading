@@ -1,0 +1,47 @@
+{
+    "RegulatoryItems":{
+        "Option1Yes":"input[value='true'][name='shareholder']",
+        "TickerSymbol":"//input[@placeholder='Ticker Symbol']",
+        "Option1No":"input[value='false'][name='shareholder']",
+        "Option2Yes":"input[value='true'][name='tradeAuthtoAnotherParty']",
+        "Option2No":"input[value='false'][name='tradeAuthtoAnotherParty']",
+        "Option3Yes":"input[value='true'][name='politicallyExposeAccount']",
+        "PoliticalTitle":"input[name='politicallyExposePersonTitle']",
+        "OfficialMembers":"//input[@name='politicallyExposePersonMembers']",
+        "PoliticalOrganization":"//input[@name='politicallyExposePersonOrganization']",
+        "Option3No":"input[value='false'][name='politicallyExposeAccount']",
+        "Option4Yes":"input[value='true'][name='foreignFinancialInstAccount']",
+        "NameOfForeignInstitution":"//input[@name='foreignFinancialInstitutionName']",
+        "Option4No":"input[value='false'][name='foreignFinancialInstAccount']",
+        "Option5Yes":"input[value='true'][name='foreignBankOrgAccount']",
+        "ProvideAgentName":"//input[@name='foreignFinancialInstitutionName']",
+        "Option5No":"input[value='false'][name='foreignBankOrgAccount']",
+        "Option6Yes":"input[value='true'][name='pabAccount']",
+        "Option6No":"input[value='false'][name='pabAccount']",
+        "Option7Yes":"input[value='true'][name='thirdPartyTrading']",
+        "ProvideNameOfAgent":"//input[@name='anotherPartyTradingAgent']",
+        "Option7No":"input[value='false'][name='thirdPartyTrading']",
+        "Option8Yes":"input[value='true'][name='isInstitutionalTypeAccount']",
+        "Option8No":"input[value='false'][name='isInstitutionalTypeAccount']",
+        "Option9Yes":"input[value='true'][name='isControlledByPublicCorp']",
+        "Option9No":"input[value='false'][name='isControlledByPublicCorp']",
+        "Option10Yes":"input[value='true'][name='isUnderBrokerControl']",
+        "Option10No":"input[value='false'][name='isUnderBrokerControl']",
+        "Relationship":"//input[@placeholder='Enter Relationship']",
+        "PersonName":"//input[@placeholder='Enter Person Name']",
+        "Firm/Employer":"//input[@placeholder='Enter Firm/Employer']",
+        "CorporationName":"//input[@placeholder='Enter Corporation Name']",
+        "Address1":"//input[@placeholder='Enter Address 1']",
+        "Address2":"//input[@placeholder='Enter Address 2']",
+        "City":"//input[@placeholder='Enter City']",
+        "Country":"//select[@name='q4to5CorpCountry']",
+        "State":"//select[@name='q4to5CorpState']",
+        "ZipCode":"//input[@placeholder='Enter Zip Code']"
+
+
+    },
+    "DirectCommunication":{
+        "IObject":"input[value='true'][name='rule14B1CAccepted']",
+        "IDontObject":"input[value='false'][name='rule14B1CAccepted']"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "DisclosureAndSignatures":{
+        "AccountAgreement":"//a[normalize-space()='Account Agreement']",
+        "AccountAgreementYes":"input[value='true'][name='wdaccountAgreementCashCheck']",
+        "AccountAgreementNo":"input[value='false'][name='wdaccountAgreementCashCheck']",
+        "AccountAgreementCash":"//a[normalize-space()='Account Agreement Cash & Margin Domestic']",
+        "AccountAgreementCashAndMarginYes":"input[value='true'][name='wdaccountAgreementCashMarginCheck']",
+        "AccountAgreementCashAndMarginNo":"input[value='false'][name='wdaccountAgreementCashMarginCheck']",
+        "DigitalSignature":"//*[name()='rect' and @id='react-sketch-canvas__canvas-background']",
+        "CaptureSignature":"//button[normalize-space()='Capture Signature']",
+        "ClearSignature":"//button[normalize-space()='Clear Signature']"
+
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "LoginLocators":{
+        "Username":"//input[@id='username']",
+        "Password":"//input[@id='password']",
+        "LoginButton":"//button[normalize-space()='Login']",
+        "ViewPassword":"//i[@class='ico_fa fa fa-eye']"
+    }
+}

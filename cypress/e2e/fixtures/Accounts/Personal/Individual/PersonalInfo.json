@@ -1,0 +1,9 @@
+{
+    "statuses": ["Married", "Divorced", "Single", "Widowed"],
+    "firstName":"Robert",
+    "middleName":"Jone",
+    "lastName":"Clark",
+    "dob":"10/12/1990",
+    "NoOFdependents":"05"
+
+}

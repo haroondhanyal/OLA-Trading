@@ -1,0 +1,14 @@
+{
+    "SignUpLocators":{
+        "FirstName":"//input[@id='firstName']",
+        "LastName":"//input[@id='lastName']",
+        "UserName":"//input[@id='username']",
+        "Email":"//input[@id='email']",
+        "Password":"//input[@id='password']",
+        "ReEnterPassword":"//input[@id='repassword']",
+        "SignUPButton":"//button[normalize-space()='Sign Up']"
+
+    }
+        
+    
+}

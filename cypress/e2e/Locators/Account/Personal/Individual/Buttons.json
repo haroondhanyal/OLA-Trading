@@ -1,0 +1,9 @@
+{
+    "UsageButtons":{
+        "Previous":"//button[normalize-space()='Previous']",
+        "Save":"//button[normalize-space()='Save']",
+        "SaveAndContinue":"//button[normalize-space()='Save and Continue']",
+        "Review":"//button[normalize-space()='Review']",
+        "Submit":"//button[normalize-space()='Submit']"
+    }
+}
