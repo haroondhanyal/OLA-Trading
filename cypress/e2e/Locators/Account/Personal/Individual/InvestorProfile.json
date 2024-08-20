@@ -17,8 +17,8 @@
         "OPtions":"//select[@name='optionsExp']",
         "MutualFunds":"//select[@name='fundsExp']",
         "MarginAccount":"//select[@name='marginAccountExp']",
-        "MunicipalBonds":"//select[@name='marginAccountExp']",
-        "Commodities/Features":"//select[@name='commoditiesExp']",
+        "MunicipalBonds":"//select[@name='municipalBondsExp']",
+        "CommoditiesFeatures":"//select[@name='commoditiesExp']",
         "GovernmentBond":"//select[@name='govtBondsExp']",
         "CorporateBonds":"//select[@name='corporateBondsExp']",
         "TaxShelters":"//select[@name='taxShelterExp']"

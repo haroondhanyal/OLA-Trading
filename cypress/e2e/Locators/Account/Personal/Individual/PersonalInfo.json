@@ -1,15 +1,15 @@
 {
     "PersonalInformation":{
         "FirstName":"//input[@placeholder='Enter a First Name']",
-        "MiddleName":"input[placeholder='Enter a Middle Name']",
+        "MiddleName":"//input[@placeholder='Enter a Middle Name']",
         "LastName":"//input[@placeholder='Enter a Last Name']",
         "DateofBirth":"//input[@name='dateofBirth']",
         "NoOfDependents":"//input[@placeholder='Enter Number of Dependents']",
         "MaterialStatus":"//select[@name='maritalStatusId']",
-        "Email":"//input[@placeholder='Enter an email address']",
+        "Email":"//input[@name='emailAddress']",
         "PrimaryTelephone":"//input[@placeholder='Enter Primary Telephone']",
         "WorkTelephone":"//input[@placeholder='Enter Work Telephone']",
-        "USCitizenYes":"input[value='true'][name='isUSCitizen']",
+        "USCitizenYes":"//input[@value='true']",
         "UsCitizenNO":"input[value='false'][name='isUSCitizen']",
         "UsPermanentYes":"input[value='true'][name='isUSPermanentResident']",                                                                                                                           
         "UsPermanentNo":"input[value='false'][name='isUSPermanentResident']",
@@ -18,27 +18,27 @@
         "SocialSecurityNo":"//input[@placeholder='Enter Social Security Number']",
         "IdType":"//select[@name='idTypeId']",
         "CountryOfCitizenship":"select[name='citizenshipCountryId']",
-        "IDnumber":"input[placeholder='Enter Id Number']",
+        "IDnumber":"//input[@placeholder='Enter Id Number']",
         "IDissueDate":"//input[@name='idIssueDate']",
         "IDexpirationDate":"//input[@name='idExpireDate']",
-        "IDissuanceState":"select[name='idIssuanceState']"
+        "IDissuanceState":"//input[@name='idIssueDate']"
 
     },
     "PhysicalAddress":{
         "Address1":"//input[@placeholder='Enter Address 1']",
-        "Address2":"input[placeholder='Enter Address 2']",
+        "Address2":"//input[@placeholder='Enter Address 2']",
         "CountryID":"//select[@name='countryId']",
         "StateID":"//select[@name='stateId']",
-        "City":"input[placeholder='City']",
-        "PostalCode":"input[placeholder='Enter Postal Code']"
+        "City":"//input[@placeholder='City']",
+        "PostalCode":"//input[@placeholder='Enter Postal Code']"
     },
     "MailingAddress":{
         "MailingAddressCheckBox":"//input[@id='cbMailingAddress']",
-        "MailingAddress1":"input[placeholder='Enter Mailing Address 1']",
-        "MailingAddress2":"input[placeholder='Enter Mailing Address 2']",
+        "MailingAddress1":"//input[@placeholder='Enter Mailing Address 1']",
+        "MailingAddress2":"//input[@placeholder='Enter Mailing Address 2']",
         "MailingCountryId":"//select[@name='mailingCountryId']",
         "MailingState":"//select[@name='mailingState']",
-        "MAilingCity":"input[placeholder='Enter City']",
+        "MAilingCity":"//input[@placeholder='Enter City']",
         "MailingPostalCode":"//input[@name='mailingZipCode']"
 
 
@@ -46,12 +46,12 @@
     "TrustedContact":{
         "TrustedContactCheckbox":"//input[@id='cbtrustedContact']",
         "FirstName":"//input[@placeholder='Enter First Name']",
-        "EnterLastName":"input[placeholder='Enter Last Name']",
+        "EnterLastName":"//input[@placeholder='Enter Last Name']",
         "TelephoneNumber":"//input[@placeholder='Enter Phone Number']",
         "EmailAddress":"//input[@name='trustedEmailAddress']",
         "MailingAddress1":"//input[@placeholder='Enter Trusted Mailing Address 1']",
         "MailingAddress2":"//input[@placeholder='Enter Trusted Mailing Address 2']",
-        "Country":"select[name='trustedCountry']",
+        "Country":"//select[@name='trustedCountry']",
         "State":"//select[@name='trustedState']",
         "City":"//input[@name='trustedCity']",
         "PostalCode":"//input[@name='trustedPostalCode']"

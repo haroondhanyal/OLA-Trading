@@ -1,5 +1,5 @@
 {
-    "EmploymentInformation":{
+    "EmployedData":{
         "Employed":"//span[normalize-space()='Employed*']",
         "Employer":"//input[@placeholder='Enter Employer']",
         "YearsEmployed":"//input[@id='yearswithEmployer']",
@@ -9,8 +9,14 @@
         "Country":"//select[@id='employerCountryId']",
         "State":"//select[@name='employerStateId']",
         "City":"//input[@placeholder='Enter Employer City']",
-        "ZipCode":"//input[@placeholder='Enter Employer Zip Code']",
-        "Retired":"//span[normalize-space()='Retired*']",
+        "ZipCode":"//input[@placeholder='Enter Employer Zip Code']"
+        
+    },
+    "RetiredInfo":{
+        "Retired":"//span[normalize-space()='Retired*']"
+    },
+    "UnEmployedInfo":{
         "Unemployed":"//span[normalize-space()='Unemployed*']"
+
     }
 }

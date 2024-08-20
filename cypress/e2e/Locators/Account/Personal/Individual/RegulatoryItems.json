@@ -1,12 +1,12 @@
 {
     "RegulatoryItems":{
-        "Option1Yes":"input[value='true'][name='shareholder']",
+        "Option1Yes":":nth-child(3) > :nth-child(2) > .form-check-input",
         "TickerSymbol":"//input[@placeholder='Ticker Symbol']",
-        "Option1No":"input[value='false'][name='shareholder']",
-        "Option2Yes":"input[value='true'][name='tradeAuthtoAnotherParty']",
-        "Option2No":"input[value='false'][name='tradeAuthtoAnotherParty']",
-        "Option3Yes":"input[value='true'][name='politicallyExposeAccount']",
-        "PoliticalTitle":"input[name='politicallyExposePersonTitle']",
+        "Option1No":":nth-child(3) > :nth-child(1) > .form-check-input'",
+        "Option2Yes":":nth-child(5) > :nth-child(2) > .form-check-input",
+        "Option2No":":nth-child(5) > :nth-child(1) > .form-check-input",
+        "Option3Yes":":nth-child(3) > .col-2 > :nth-child(2) > .form-check-input",
+        "PoliticalTitle":"//input[@name='politicallyExposePersonTitle']",
         "OfficialMembers":"//input[@name='politicallyExposePersonMembers']",
         "PoliticalOrganization":"//input[@name='politicallyExposePersonOrganization']",
         "Option3No":"input[value='false'][name='politicallyExposeAccount']",
@@ -41,7 +41,7 @@
 
     },
     "DirectCommunication":{
-        "IObject":"input[value='true'][name='rule14B1CAccepted']",
-        "IDontObject":"input[value='false'][name='rule14B1CAccepted']"
+        "IObject":".col-xxl-3 > :nth-child(2) > .form-check-input",
+        "IDontObject":".col-xxl-3 > :nth-child(1) > .form-check-input"
     }
 }

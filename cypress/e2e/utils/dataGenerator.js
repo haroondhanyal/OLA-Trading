@@ -24,11 +24,11 @@ export const generatePersonalInfoData=()=>{
     const thirtyYearsAgo = new Date();
     thirtyYearsAgo.setFullYear(now.getFullYear() - 30);
 
-    const dob = formatDate(getRandomDateBetween(thirtyYearsAgo, eighteenYearsAgo));
+    // const dob = formatDate(getRandomDateBetween(thirtyYearsAgo, eighteenYearsAgo));
 
     const noOfDependents = faker.number.int({ min: 1, max: 99 }).toString().padStart(2, '0');
 
-    const primaryTelephone = faker.phone.number('###########').padStart(15, '0');
+    const primaryTelephone = faker.phone.number('###########').padStart(18, '0');
     const workTelephone = faker.phone.number('###########').padStart(15, '0');
     const securityNumber = faker.phone.number('###########').padStart(9, '0');
     const idNumber = faker.phone.number('###########').padStart(17, '0');
@@ -37,12 +37,12 @@ export const generatePersonalInfoData=()=>{
         mName: faker.name.middleName(),
         lName: faker.name.lastName(),
         nOfDependents: noOfDependents,
-        membersEmail: faker.internet.email(),
+        emailType: faker.internet.email(),
         primaryTelephone: primaryTelephone, 
         workTelephone:workTelephone,
         socialSecNumber:securityNumber,
         IdNumber:idNumber,
-        dob: dob, 
+        // dob: dob, 
         // address1: faker.address.streetAddress(),
         // address2: faker.address.secondaryAddress(),
         // city: faker.address.city(),
