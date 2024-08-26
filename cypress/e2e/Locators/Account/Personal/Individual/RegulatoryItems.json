@@ -1,11 +1,11 @@
 {
     "RegulatoryItems":{
-        "Option1Yes":":nth-child(3) > :nth-child(2) > .form-check-input",
+        "Option1Yes":"input[value='true'][name='shareholder']",
         "TickerSymbol":"//input[@placeholder='Ticker Symbol']",
-        "Option1No":":nth-child(3) > :nth-child(1) > .form-check-input'",
-        "Option2Yes":":nth-child(5) > :nth-child(2) > .form-check-input",
-        "Option2No":":nth-child(5) > :nth-child(1) > .form-check-input",
-        "Option3Yes":":nth-child(3) > .col-2 > :nth-child(2) > .form-check-input",
+        "Option1No":"input[value='false'][name='shareholder']'",
+        "Option2Yes":"input[value='true'][name='tradeAuthtoAnotherParty']",
+        "Option2No":"input[value='false'][name='tradeAuthtoAnotherParty']",
+        "Option3Yes":"input[value='true'][name='politicallyExposeAccount']",
         "PoliticalTitle":"//input[@name='politicallyExposePersonTitle']",
         "OfficialMembers":"//input[@name='politicallyExposePersonMembers']",
         "PoliticalOrganization":"//input[@name='politicallyExposePersonOrganization']",
@@ -14,7 +14,7 @@
         "NameOfForeignInstitution":"//input[@name='foreignFinancialInstitutionName']",
         "Option4No":"input[value='false'][name='foreignFinancialInstAccount']",
         "Option5Yes":"input[value='true'][name='foreignBankOrgAccount']",
-        "ProvideAgentName":"//input[@name='foreignFinancialInstitutionName']",
+        "ProvideAgentName":"//input[@name='foreignBankOrgAccountAgent']",
         "Option5No":"input[value='false'][name='foreignBankOrgAccount']",
         "Option6Yes":"input[value='true'][name='pabAccount']",
         "Option6No":"input[value='false'][name='pabAccount']",
@@ -29,13 +29,13 @@
         "Option10No":"input[value='false'][name='isUnderBrokerControl']",
         "Relationship":"//input[@placeholder='Enter Relationship']",
         "PersonName":"//input[@placeholder='Enter Person Name']",
-        "Firm/Employer":"//input[@placeholder='Enter Firm/Employer']",
+        "FirmEmployer":"//input[@placeholder='Enter Firm/Employer']",
         "CorporationName":"//input[@placeholder='Enter Corporation Name']",
         "Address1":"//input[@placeholder='Enter Address 1']",
         "Address2":"//input[@placeholder='Enter Address 2']",
         "City":"//input[@placeholder='Enter City']",
         "Country":"//select[@name='q4to5CorpCountry']",
-        "State":"//select[@name='q4to5CorpState']",
+        "State":"select[name='q4to5CorpState']",
         "ZipCode":"//input[@placeholder='Enter Zip Code']"
 
 

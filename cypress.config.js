@@ -6,8 +6,8 @@ const path = require('path');
 
 module.exports = defineConfig({
   projectId: 'sjnqhg',
-  viewportWidth: 1280,
-  viewportHeight: 880,
+  viewportWidth: 1200,
+  viewportHeight: 920,
 
   e2e: {
     setupNodeEvents(on, config) {

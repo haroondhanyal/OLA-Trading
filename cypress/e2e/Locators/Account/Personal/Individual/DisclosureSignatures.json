@@ -6,6 +6,9 @@
         "AccountAgreementCash":"//a[normalize-space()='Account Agreement Cash & Margin Domestic']",
         "AccountAgreementCashAndMarginYes":"input[value='true'][name='wdaccountAgreementCashMarginCheck']",
         "AccountAgreementCashAndMarginNo":"input[value='false'][name='wdaccountAgreementCashMarginCheck']",
+        "LoanAgreement":"//a[normalize-space()='Fully Paid Securities Loan Agreement']",
+        "LoanAgreementYes":"input[value='true'][name='wdfullyPaidSecLoadAgreementCheck']",
+        "LoanAgreementNO":"input[value='false'][name='wdfullyPaidSecLoadAgreementCheck']",
         "DigitalSignature":"//*[name()='rect' and @id='react-sketch-canvas__canvas-background']",
         "CaptureSignature":"//button[normalize-space()='Capture Signature']",
         "ClearSignature":"//button[normalize-space()='Clear Signature']"

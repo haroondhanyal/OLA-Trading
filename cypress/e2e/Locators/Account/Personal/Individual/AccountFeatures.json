@@ -1,7 +1,7 @@
 {
     "AccountFeatures":{
-        "E-DocumentsYes":"input[value='true'][name='eDocuments']",
-        "E-DocumentsNo":"input[value='false'][name='eDocuments']",
+        "EDocumentsYes":"input[value='true'][name='eDocuments']",
+        "EDocumentsNo":"input[value='false'][name='eDocuments']",
         "AcceptCharge":"//button[normalize-space()='Accept Charge']",
         "KeepDocuments":"//button[normalize-space()='Keep Documents']",
         "MoneyMarketYes":"input[value='true'][name='sweepProgram']",
@@ -9,8 +9,8 @@
         "AddMarginToAccountYes":"input[value='true'][name='isMarginEnable']",
         "AddMarginToAccountNo":"input[value='false'][name='isMarginEnable']",
         "ParticipateYes":"input[value='true'][name='participateSecuritiesLending']",
-        "FullyPAidSecurities":"//span[@class='lending-text']",
-        "FullyPaidSecurities?":"//a[normalize-space()='What is Fully Paid Securities Lending?']",
+        "FullyPaidSecurities":"//span[@class='lending-text']",
+        "WhatFullyPaidSecurities":"//a[normalize-space()='What is Fully Paid Securities Lending?']",
         "Close":"//button[normalize-space()='Close']",
         "ParticipateNo":"input[value='false'][name='participateSecuritiesLending']",
         "DividendReinvestmentYes":"input[value='true'][name='dividendReinvestment']",
