@@ -4,7 +4,7 @@ export class BasePage {
         cy.xpath(selector, { timeout }).should('be.visible');
     }
 
-    clickElement(selector) {
+    clickElement(selector) {    
         this.waitForElement(selector);
         cy.xpath(selector).click();
     }

@@ -1,0 +1,21 @@
+[
+    {
+        "accountType": "Individual",
+        "subtype": "",
+        "username":"Testing ",
+        "password":"Pac@123456"
+    },
+   
+    {
+        "accountType": "Joint",
+        "subtype": "Rights of Survivorship",
+        "username":"Testing ",
+        "password":"Pac@123456"
+    },
+    {
+        "accountType": "Joint",
+        "subtype": "Joint Tenants in Common",
+        "username":"Testing ",
+        "password":"Pac@123456"
+    }
+]

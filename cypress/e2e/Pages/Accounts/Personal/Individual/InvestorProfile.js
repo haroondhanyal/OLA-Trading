@@ -44,8 +44,12 @@ export class InvestorProfile{
         cy.wait(100)
 
     }
+    updateOptions(){
+        cy.xpath(InvestmentData.InvestmentProfile.InvestmentObjective).scrollIntoView().select('2 - Income') .trigger('change');
+        cy.xpath(InvestmentData.InvestmentProfile.InvestmentExperience).scrollIntoView().select('Good (3 to 5 years)') .trigger('change');
+    }
     UsageButtons(){
-        cy.xpath(Buttons.UsageButtons.SaveAndContinue).click()
+        cy.xpath(Buttons.UsageButtons.SaveAndContinue).scrollIntoView().click()
         cy.wait(300)
     }
 

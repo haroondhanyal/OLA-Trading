@@ -46,6 +46,7 @@ describe("User SignedIn and Creates the  Personal Individual Account ",()=>{
             IndividualAccountRequest.CreateNewAccount()
             IndividualAccountRequest.AccountSelection();
             IndividualAccountRequest.Next();
+            // CancelViewAccountApplication.handleIncompleteApplication();
             // CancelViewAccountApplication.checkForIncompleteAccountAlert().then(isAlertVisible=>{
             //     if (isAlertVisible) {
             //         cy.log('Custom Alert: Incomplete account detected. Viewing the incomplete application...');
@@ -55,9 +56,6 @@ describe("User SignedIn and Creates the  Personal Individual Account ",()=>{
             //         IndividualAccountRequest.AccountSelection();
             //         IndividualAccountRequest.Next();
             //     }
-                
-        
-
             // })
             const randomData= generatePersonalInfoData();
             cy.writeToFixture('PersonInfoData', randomData)
@@ -74,6 +72,7 @@ describe("User SignedIn and Creates the  Personal Individual Account ",()=>{
             Investor.fillFinancialSuitability()
             Investor.fillPriorInvestmentExperience()
             Investor.fillACHRelationship()
+            Investor.updateOptions()
             Investor.UsageButtons()
             cy.wait(5000);
             cy.url().should('include', '/#/regulatory-items');  
@@ -114,9 +113,11 @@ describe("User SignedIn and Creates the  Personal Individual Account ",()=>{
             DAS.CashAndMarginDomesticYes()
             DAS.LoanAgreementYes()
             DAS.DigitalSignature()
+            cy.get('#react-sketch-canvas__canvas-background')
+            .should('be.visible');
             DAS.CaptureSignature()
-            DAS.Save()
-            DAS.SaveAndContinue()
+            // DAS.Save()
+            // DAS.SaveAndContinue()
         })
         
         

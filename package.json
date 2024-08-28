@@ -3,11 +3,12 @@
     "@cypress/webpack-preprocessor": "^6.0.2",
     "@faker-js/faker": "^8.4.1",
     "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.13.0",
     "cypress-xpath": "^2.0.1",
     "init": "^0.1.2"
   },
   "devDependencies": {
-    "cypress": "^13.13.3"
+    "cypress": "^13.14.0"
   },
   "scripts": {
     "test": "npm run clean && npm run cypress:run && npm run report:allure",

@@ -1,5 +1,6 @@
 const DiscSignature=require('../../../../Locators/Account/Personal/Individual/DisclosureSignatures.json')
 const Buttons=require('../../../../Locators/Account/Personal/Individual/Buttons.json')
+
 export class DisclosureAndSignatures{
     setupStubs() {
         cy.window().then((win) => {
@@ -50,25 +51,32 @@ export class DisclosureAndSignatures{
     LoanAgreementNo(){
         cy.get(DiscSignature.DisclosureAndSignatures.LoanAgreementNo).click()
     }
+    // DigitalSignature() {
+    //    // cy.get('#react-sketch-canvas__canvas-background')
+    //    cy.xpath("//*[name()='rect' and @id='react-sketch-canvas__canvas-background']")
+    //     .trigger('mousedown', { button: 2, which: 3 })
+    //   //cy.get('#react-sketch-canvas__canvas-background')
+    //   cy.xpath("//*[name()='rect' and @id='react-sketch-canvas__canvas-background']")
+    //     .trigger('mousemove', { clientX: 2, clientY: 5 }) 
+    //     .trigger('mousemove', { clientX: 8, clientY: 4 }) 
+    //   //cy.get('#react-sketch-canvas__canvas-background')
+    //   cy.xpath("//*[name()='rect' and @id='react-sketch-canvas__canvas-background']")
+    //     .trigger('mouseup', { button: 2, which: 3 })
+    // }
     DigitalSignature(){
-        // Draw "H"
-        cy.xpath(DiscSignature.DisclosureAndSignatures.DigitalSignature)
-        .trigger('mousedown', { clientX: 50, clientY: 50, force: true })
-        .trigger('mousemove', { clientX: 50, clientY: 150, force: true })
-        .trigger('mouseup', { force: true });
-
-        cy.xpath(DiscSignature.DisclosureAndSignatures.DigitalSignature)
-        .trigger('mousedown', { clientX: 100, clientY: 50, force: true })
-        .trigger('mousemove', { clientX: 100, clientY: 150, force: true })
-        .trigger('mouseup', { force: true });
-
-        cy.xpath(DiscSignature.DisclosureAndSignatures.DigitalSignature)
-        .trigger('mousedown', { clientX: 50, clientY: 100, force: true })
-        .trigger('mousemove', { clientX: 100, clientY: 100, force: true })
-        .trigger('mouseup', { force: true });
-
-       
+        cy.get("#react-sketch-canvas__canvas-background")
+        .trigger("mousedown", { button: 0, which: 1, clientX: 100, clientY: 100 })
+        .then(() => { console.log('Mouse Down at (100, 100)'); })
+        .trigger("mousemove", { clientX: 150, clientY: 150 })
+        .then(() => { console.log('Mouse Move to (150, 150)'); })
+        .trigger("mousemove", { clientX: 200, clientY: 200 })
+        .then(() => { console.log('Mouse Move to (200, 200)'); })
+        .trigger("mouseup", { button: 0, which: 1, clientX: 200, clientY: 200 })
+        .then(() => { console.log('Mouse Up at (200, 200)'); });
+          
     }
+    
+        
     CaptureSignature(){
         cy.xpath(DiscSignature.DisclosureAndSignatures.CaptureSignature).click()
     }
@@ -83,3 +91,5 @@ export class DisclosureAndSignatures{
     }
 
 }
+
+

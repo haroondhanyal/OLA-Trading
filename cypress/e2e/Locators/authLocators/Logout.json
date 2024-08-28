@@ -1,0 +1,6 @@
+{
+    "Logout":{
+        "LogClick":"//button[@id='dropdown-basic-button']",
+        "LogoutButton":"//a[normalize-space()='Logout']"
+    }
+}

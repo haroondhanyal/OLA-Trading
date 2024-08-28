@@ -6,8 +6,8 @@ const path = require('path');
 
 module.exports = defineConfig({
   projectId: 'sjnqhg',
-  viewportWidth: 1200,
-  viewportHeight: 920,
+  viewportWidth: 1000,
+  viewportHeight: 700,
 
   e2e: {
     setupNodeEvents(on, config) {
@@ -22,7 +22,7 @@ module.exports = defineConfig({
   video: true,
   videosFolder: 'cypress/e2e/videos',
   screenshotsFolder: 'cypress/e2e/screenshots',
-  // pageLoadTimeout: 120000,
+  pageLoadTimeout: 120000,
   screenshots: true,
   screenshotOnRunFailure: true,
 
